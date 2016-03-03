@@ -1,3 +1,9 @@
+body {
+  background: url("concrete_seamless.png");
+  font-family: Constantia, "Lucida Bright", Lucidabright,
+               "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif",
+               "Liberation Serif", Georgia, serif;
+}
 
 h1, h2, h3, h4, h5, h6, .navbar {
   margin: 0;
@@ -18,7 +24,7 @@ h1, h2, h3, h4, h5, h6, .navbar {
 }
 
 .hero {
-  background: url('hero.jpeg') no-repeat center center fixed;
+  background: url("hero.jpeg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
