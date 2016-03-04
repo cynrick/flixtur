@@ -13,7 +13,11 @@
       <%= link_to "Administer", instructor_course_path(@course), class: "btn btn-danger" %>
     <% end %>
     &nbsp;&nbsp;
-    <%= link_to "Enroll", course_enrollments_path(@course), method: :post, class: "btn btn-primary" %>
+    <% if current_user && current_user.enrolled_in?(@course) %>
+      <h3 class="label label-info">You are enrolled!</h3>
+    <% else %>
+      <%= link_to "Enroll", course_enrollments_path(@course), method: :post, class: "btn btn-primary" %>
+    <% end %>
   </div>
   <div class="col-sm-9 col-xs-12">
     <%= @course.description %>
