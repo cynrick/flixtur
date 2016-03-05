@@ -55,9 +55,25 @@
 
   <div id="footer">
     <div class="container">
-      <b>Teachers</b>
-      <br />
-      <%= link_to 'Teach a Course', new_instructor_course_path %>
+      <div class="col-xs-12 col-sm-4">
+        <b>Teachers</b>
+        <br />
+        <%= link_to 'Teach a Course', new_instructor_course_path %>
+        <br />
+        <%= link_to 'My Dashboard', dashboard_path %>
+      </div>
+      <div class="col-xs-12 col-sm-4">
+        <%= link_to 'Team', '#' %>
+        <br />
+        <%= link_to 'Careers', '#' %>
+        <br />
+        <%= link_to 'Privacy Policy', '#' %>
+      </div>
+      <div class="col-xs-12 col-sm-4">
+        <%= link_to 'About', '#' %>
+        <br />
+        <%= link_to 'Contact', '#' %>
+      </div>
     </div>
   </div>
 </div>
