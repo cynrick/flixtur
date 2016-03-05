@@ -15,6 +15,7 @@ gem 'carrierwave-aws'
 gem 'figaro'
 gem 'fog'
 gem 'mini_magick', '~> 4.3.1'
+gem 'stripe'
 
 gem 'sdoc', '~> 0.4.0', group: :doc
 
