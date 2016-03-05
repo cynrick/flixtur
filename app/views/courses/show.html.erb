@@ -19,6 +19,7 @@
       <% if @course.free? %>
         <%= link_to "Enroll", course_enrollments_path(@course), method: :post, class: "btn btn-primary" %>
       <% else %>
+        <br /><br />
         <%= form_tag course_enrollments_path(@course) do %>
           <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
                   data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
