@@ -16,6 +16,7 @@ gem 'figaro'
 gem 'fog'
 gem 'mini_magick', '~> 4.3.1'
 gem 'stripe'
+gem 'ranked-model'
 
 gem 'sdoc', '~> 0.4.0', group: :doc
 
